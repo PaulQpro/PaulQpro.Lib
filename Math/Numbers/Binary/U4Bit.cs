@@ -9,7 +9,7 @@ namespace PaulQpro.Lib.Math.Numbers.Binary
     public class U4Bit : UXBit
     {
         private bool[] Value { get; }
-        override public byte Bits { get; } = 4;
+        override public byte Bits { get; protected set; } = 4;
         new static public byte MaxValue { get; } = 15;
         
         static public explicit operator U4Bit(bool[] value)
@@ -38,7 +38,7 @@ namespace PaulQpro.Lib.Math.Numbers.Binary
             return value.Value;
         }
 
-        public U4Bit()
+        protected U4Bit()
         {
             Value = new bool[Bits];
             for (byte i = 0; i < Bits; i++)
