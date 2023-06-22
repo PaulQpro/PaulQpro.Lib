@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PaulQpro.Lib.Math.Numbers.Binary;
 
-namespace ConsoleApp1.Numbers.Hexademical
+namespace PaulQpro.Lib.Math.Numbers.Hexademical
 {
     class HexDigit
     {
