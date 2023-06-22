@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaulQpro.Lib.Math", "Math\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{8E3ECA6F-7836-480B-8BE1-67882A54DE00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaulQpro.Lib.Image", "Image\PaulQpro.Lib.Image.csproj", "{5BF32E56-209D-4F2E-808F-2DD4DA143409}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8E3ECA6F-7836-480B-8BE1-67882A54DE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E3ECA6F-7836-480B-8BE1-67882A54DE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E3ECA6F-7836-480B-8BE1-67882A54DE00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF32E56-209D-4F2E-808F-2DD4DA143409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF32E56-209D-4F2E-808F-2DD4DA143409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF32E56-209D-4F2E-808F-2DD4DA143409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF32E56-209D-4F2E-808F-2DD4DA143409}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
