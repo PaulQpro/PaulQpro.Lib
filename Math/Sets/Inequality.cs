@@ -13,7 +13,7 @@ namespace PaulQpro.Lib.Math.Sets
         public bool TopStrict { get; }
         public bool LowStrict { get; }
 
-        public bool IsValueBelongsToInequality(double value)
+        public bool Has(double value)
         {
             if (LowStrict && TopStrict) return LowBoundary < value && value < TopBoundary;
             else if (LowStrict && !TopStrict) return LowBoundary < value && value <= TopBoundary;
@@ -22,7 +22,7 @@ namespace PaulQpro.Lib.Math.Sets
         }
         static public bool IsValueBelongsToInequality(double value, Inequality inequality)
         {
-            return inequality.IsValueBelongsToInequality(value);
+            return inequality.Has(value);
         }
         /// <summary>
         /// Converts Inequality type to String type
