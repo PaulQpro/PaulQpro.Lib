@@ -36,5 +36,6 @@ namespace PaulQpro.Lib.Math
             }
             return result;
         }
+        static public double Sqr(double a) { return System.Math.Pow(a, 2); }
     }
 }
