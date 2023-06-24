@@ -25,7 +25,7 @@ namespace PaulQpro.Lib.Math.Sets
         {
             get {
                 if (index >= 0) return Values[index];
-                else throw new ArgumentException();
+                else throw new ArgumentOutOfRangeException();
             }
         }
         public static implicit operator Set<T>(List<T> values) => new Set<T>(values);
