@@ -55,8 +55,10 @@ namespace PaulQpro.Lib.Math.Numbers.Binary
         }
         static public implicit operator UXBit(ulong value)
         {
-            UXBit result = new UXBit();
-            result.Bits = (byte)Maths.Ceiling(Maths.Log(value, 2));
+            UXBit result = new UXBit
+            {
+                Bits = (byte)Maths.Ceiling(Maths.Log(value, 2))
+            };
             result.Value = new bool[result.Bits];
             for (int i = 0; i < result.Bits; i++)
             {
