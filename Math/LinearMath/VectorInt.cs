@@ -7,7 +7,7 @@ namespace PaulQpro.Lib.Math.LinearMath
         public double Length { 
             get{
                 double result = 0;
-                foreach(int val in vector)
+                foreach(int val in VectorValues)
                 {
                     result += Maths.Pow(val, 2);
                 }
@@ -18,19 +18,19 @@ namespace PaulQpro.Lib.Math.LinearMath
 
         public static implicit operator VectorInt(int[] values) => new VectorInt(values);
         public static explicit operator VectorInt(double[] values) => new VectorInt(values);
-        public static implicit operator VectorNum(VectorInt vector) => vector.vector;
+        public static implicit operator VectorNum(VectorInt vector) => vector.VectorValues;
         protected VectorInt(int[] values)
         {
-            vectorLength = (int)values.Length;
-            vector = values;
+            VectorLength = (int)values.Length;
+            VectorValues = values;
         }
         protected VectorInt(double[] values)
         {
-            vectorLength = (int)values.Length;
-            vector = new int[values.Length];
-            for (int i = 0; i < vector.Length; i++)
+            VectorLength = (int)values.Length;
+            VectorValues = new int[values.Length];
+            for (int i = 0; i < VectorValues.Length; i++)
             {
-                vector[i] = (int)values[i];
+                VectorValues[i] = (int)values[i];
             }
         }
     }
